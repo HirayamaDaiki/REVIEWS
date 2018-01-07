@@ -1,0 +1,17 @@
+<h2>商品名</h2>	
+	<h3 class="item_content"><%= @item.item_name%></h3>
+<h5><%=@item.reviews.count%>件コメント</h5>
+<ol>
+	<% @item.reviews.each do |post_comment|%>
+		<li class="review">
+			<%= review.review %>
+		</li>
+		<% end %>
+</ol>
+
+<%= form_for [@item,@comment] do |f| %>
+	<div>
+		<%= f.text_area :comment %>
+	</div>
+	<%= f.submit "レビューを送る"%>
+<% end %>

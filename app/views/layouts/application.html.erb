@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>REVIEWS</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  	<header>
+  		<div class="header">
+  			<div src="index">REVIEWS</div>
+  			<div class="header_bar"></div>
+  		</div>
+  	</header><!-- /header -->
+    <%= yield %>
+    <footer>
+    	<div class="footer">
+    		<p>REVIEWS</p>
+    	</div>
+    </footer>
+  </body>
+</html>

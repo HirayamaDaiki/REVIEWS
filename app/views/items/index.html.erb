@@ -1,0 +1,6 @@
+<section class="item">
+  <h2 class="item_content">商品名</h2>
+</section>
+<%=@items.each do|item|%>
+  <h3 class="item_name"><%=link_to item.item_name, item_path(item)%></h3>
+<% end %>
